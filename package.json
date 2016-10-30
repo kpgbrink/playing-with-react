@@ -1,0 +1,30 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "bin": {
+    "project1": "app.bundle.js"
+  },
+  "dependencies": {
+    "babel-preset-react": "^6.16.0",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "nodemon": "^1.11.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "webpack": "^1.13.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.0",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "webpack": "^1.13.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kristofer",
+  "license": "ISC"
+}
