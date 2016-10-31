@@ -23,7 +23,7 @@ class MenuBar extends React.Component {
     render() {
         return (
             <div>
-                <p>This is the menu bar</p>
+                <h1>This is the menu bar</h1>
             </div>
             );
     }
@@ -35,6 +35,10 @@ class UserBar extends React.Component {
         return (
             <div>
                 <p>This is the user bar</p>
+                <img className="profile-image" src="images/profile/defaultProfilePic.png"/>
+                <div className="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+                <h2 className="full-name">Full Name</h2>
+                <a href="#" onclick="signOut();">Sign out</a> 
             </div>
             );
     }
@@ -45,13 +49,73 @@ class Content extends React.Component {
     render() {
         return (
             <div>
-                <p>This is content</p>
+                <p> This is first content</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
+                <p>This is content<br/>a<br/>a</p>
             </div>
             );
     }
 }
 
-//<div className="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
 
 class ReactPage extends React.Component {
   render() {
@@ -64,11 +128,13 @@ class ReactPage extends React.Component {
                     < UserBar/>
                 </div>
             </div>
-            <div className="menu-bar">
-                < MenuBar/>
-            </div>
-            <div className="content">
-                < Content/>
+            <div className="menu-bar-and-content">
+                <div className="menu-bar">
+                    < MenuBar/>
+                </div>
+                <div className="content">
+                    < Content/>
+                </div>
             </div>
         </div>;
   }
@@ -82,6 +148,11 @@ $( () => {
         cache: true,
         dataType: 'script',
     });
+    
+    // fix position of menu-bar-and-content
+    $('.menu-bar-and-content').css({'margin-left':$('.side-bar').width()});
+    // fix position of content
+    $('.content').css({'margin-top':$('.menu-bar').height()});
 });
 
 

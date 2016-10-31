@@ -1,8 +1,44 @@
+html, body, #container {
+    height: 100%;
+}
+
+.react-page {
+    min-height: 100%;
+}
+
 * {
     margin: 0;
 }
 
 .side-bar {
-    background-color: blue;
+    position: fixed; // make sidebar stay in spot
+    top:0;bottom:0;left:0; // set all the way to top bottom and left of screen
 }
 
+.react-page {
+    display: flex;
+    .side-bar {
+        background-color: green;
+        .logo {
+            background-color: purple;
+        }
+        .user-bar {
+            background-color: aquamarine;
+            .profile-image {
+                width: 100%;
+            }
+        }
+    }
+    .menu-bar-and-content {
+        flex-grow: 1;
+        background-color: blue;
+        .menu-bar {
+            background-color: yellow;
+            width: 100%;
+            position: fixed;
+        }
+        .content {
+            background-color: beige;
+        }
+    }
+}
