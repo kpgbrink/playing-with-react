@@ -6,9 +6,6 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><!-- jQuery-->
     <script src="script.js"></script>
-    <title>KrisTopper</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="icon" href="images/icon/icon.png"/>
 </head>
 <body>
     <div id="header"> <h2> KrisTopper</h2> </div>
