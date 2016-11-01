@@ -1,22 +1,28 @@
 const express = require('express');
+const fs = require('fs');
 const app = express();
 
 module.exports = app;
 
-const mainAssets = require('./public/bin/assetsByChunkName.json').main;
+//const mainAssets = require('./public/bin/assetsByChunkName.json').main;
+
+
+
 
 app.get('/', function (req, res) {
-    const assets = mainAssets.map(assetFileName => {
-        assetFileName = `bin/${assetFileName}`;
-        if (/\.js$/.test(assetFileName)) {
-            return `<script src="${assetFileName}" async></script>`;
-        }
-        if (/\.css$/.test(assetFileName)) {
-            return `<link rel="stylesheet" type="text/css" href="${assetFileName}" />`
-        }
-        throw new Error(`Unsure how to handle asset ${assetFileName}`);
-    });
-    res.send(`<!DOCTYPE html>
+    fs.readFile('./public/bin/assetsByChunkName.json', 'utf-8', (err, data) => {
+        if (err) { throw err};
+        const assets = JSON.parse(data).main.map(assetFileName => {
+            assetFileName = `bin/${assetFileName}`;
+            if (/\.js$/.test(assetFileName)) {
+                return `<script src="${assetFileName}" async></script>`;
+            }
+            if (/\.css$/.test(assetFileName)) {
+                return `<link rel="stylesheet" type="text/css" href="${assetFileName}" />`
+            }
+            throw new Error(`Unsure how to handle asset ${assetFileName}`);
+        });
+        res.send(`<!DOCTYPE html>
 <html>
 <head> 
     <!--Google sign in -->
@@ -33,6 +39,7 @@ app.get('/', function (req, res) {
 <div id="container"></div> 
 </body>
 </html>`);
+    });
 });
 
 app.use(express.static('public'));
