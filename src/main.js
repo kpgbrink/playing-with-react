@@ -34,7 +34,6 @@ class UserBar extends React.Component {
     render() {
         return (
             <div>
-                <p>This is the user bar</p>
                 <img className="profile-image" src="images/profile/defaultProfilePic.png"/>
                 <div className="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
                 <h2 className="full-name">Full Name</h2>
@@ -148,11 +147,6 @@ $( () => {
         cache: true,
         dataType: 'script',
     });
-    
-    // fix position of menu-bar-and-content
-    $('.menu-bar-and-content').css({'margin-left':$('.side-bar').width()});
-    // fix position of content
-    $('.content').css({'margin-top':$('.menu-bar').height()});
 });
 
 

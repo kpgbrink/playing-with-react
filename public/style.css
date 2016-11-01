@@ -15,34 +15,42 @@ html, body, #container {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  width: 10em; }
 
-/* line 18, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+/* line 19, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
 .react-page {
   display: flex; }
-  /* line 20, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+  /* line 21, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
   .react-page .side-bar {
     background-color: green; }
-    /* line 22, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+    /* line 23, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
     .react-page .side-bar .logo {
       background-color: purple; }
-    /* line 25, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+    /* line 26, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
     .react-page .side-bar .user-bar {
-      background-color: aquamarine; }
-      /* line 27, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+      background-color: aquamarine;
+      padding: .3em; }
+      /* line 29, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
       .react-page .side-bar .user-bar .profile-image {
         width: 100%; }
-  /* line 32, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+      /* line 32, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+      .react-page .side-bar .user-bar .g-signin2 {
+        width: 100%; }
+  /* line 37, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
   .react-page .menu-bar-and-content {
     flex-grow: 1;
+    margin-left: 10em;
     background-color: blue; }
-    /* line 35, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+    /* line 41, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
     .react-page .menu-bar-and-content .menu-bar {
       background-color: yellow;
       width: 100%;
+      height: 2em;
       position: fixed; }
-    /* line 40, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+    /* line 47, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
     .react-page .menu-bar-and-content .content {
+      margin-top: 2em;
       background-color: beige; }
 
 /*# sourceMappingURL=style.css.map */
