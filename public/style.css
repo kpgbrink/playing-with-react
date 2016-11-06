@@ -1,16 +1,16 @@
-/* line 1, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+/* line 4, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
 html, body, #container {
   height: 100%; }
 
-/* line 5, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+/* line 8, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
 .react-page {
   min-height: 100%; }
 
-/* line 9, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+/* line 12, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
 * {
   margin: 0; }
 
-/* line 13, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+/* line 16, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
 .side-bar {
   position: fixed;
   top: 0;
@@ -18,39 +18,42 @@ html, body, #container {
   left: 0;
   width: 10em; }
 
-/* line 19, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+/* line 22, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
 .react-page {
   display: flex; }
-  /* line 21, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+  /* line 24, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
   .react-page .side-bar {
     background-color: green; }
-    /* line 23, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+    /* line 26, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
     .react-page .side-bar .logo {
       background-color: purple; }
-    /* line 26, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+    /* line 29, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
     .react-page .side-bar .user-bar {
       background-color: aquamarine;
       padding: .3em; }
-      /* line 29, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+      /* line 32, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
       .react-page .side-bar .user-bar .profile-image {
         width: 100%; }
-      /* line 32, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+      /* line 35, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
       .react-page .side-bar .user-bar .g-signin2 {
         width: 100%; }
-  /* line 37, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+  /* line 40, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
   .react-page .menu-bar-and-content {
     flex-grow: 1;
     margin-left: 10em;
-    background-color: blue; }
-    /* line 41, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+    background-color: blue;
+    display: flex; }
+    /* line 45, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
     .react-page .menu-bar-and-content .menu-bar {
       background-color: yellow;
       width: 100%;
       height: 2em;
       position: fixed; }
-    /* line 47, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
+    /* line 51, C:/Users/Kristofer/Desktop/Fall2016/CS 336/project1/public/style.scss */
     .react-page .menu-bar-and-content .content {
       margin-top: 2em;
-      background-color: beige; }
+      padding: 1em;
+      background-color: beige;
+      flex-grow: 1; }
 
 /*# sourceMappingURL=style.css.map */
